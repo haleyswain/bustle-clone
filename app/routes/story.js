@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       });
       story.save();
-      this.transitionTo('index');
+      this.transitionTo('story');
     },
     destroyStory(story) {
       story.destroyRecord();
