@@ -1,11 +1,5 @@
 <h1>Welcome to Bustle!</h1>
 
-
-<h3>Featured story</h3>
-
-
-<h4>Story1</h4>
-
-<h4>Story2</h4>
-
-<h4>Story3</h4>
+  {{#each model as |story|}}
+      {{story-tile story=story}}
+  {{/each}}
