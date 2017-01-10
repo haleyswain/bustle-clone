@@ -1,3 +1,4 @@
-  <img src={{story.image}} alt={{story.date}}><br> {{story.title}}, {{story.author}}
-  {{update-story  story=story update="update"}}
-  <button {{action 'delete' story}}>Delete story</button>
+
+  {{#link-to "story" story.id}}
+
+  <img src={{story.image}} alt={{story.date}}><br> {{story.title}}{{/link-to}}, {{story.author}}
