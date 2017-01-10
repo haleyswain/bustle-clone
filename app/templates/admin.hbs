@@ -1,0 +1,10 @@
+<h1>Admin Page</h1>
+{{#each model as |story|}}
+    {{story-tile story=story update="update" destroyStory="destroyStory"}}
+
+{{/each}}
+
+{{new-story saveStory2="saveStory3"}}
+
+
+{{#link-to 'index'}}Home{{/link-to}}
