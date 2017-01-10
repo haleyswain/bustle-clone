@@ -1,5 +1,5 @@
 <h1>Welcome to Bustle!</h1>
 
   {{#each model as |story|}}
-      {{story-tile story=story}}
+      {{story-tile story=story destroyStory="destroyStory"}}
   {{/each}}
